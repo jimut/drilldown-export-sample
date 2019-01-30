@@ -1,0 +1,28 @@
+{
+  "name": "drilldown-export-sample",
+  "version": "1.0.0",
+  "description": "Drilldown chart export sample",
+  "author": "Jimut Dhali",
+  "private": true,
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development nodemon server/index.js --watch server",
+    "build": "nuxt build",
+    "start": "cross-env NODE_ENV=production node server/index.js",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "consola": "^2.3.2",
+    "cross-env": "^5.2.0",
+    "dotenv": "^6.2.0",
+    "express": "^4.16.4",
+    "nuxt": "^2.3.4"
+  },
+  "devDependencies": {
+    "eslint": "^5.12.1",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-loader": "^2.1.1",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-vue": "^4.7.1",
+    "nodemon": "^1.18.9"
+  }
+}
