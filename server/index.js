@@ -1,6 +1,9 @@
 const express = require('express');
 const consola = require('consola');
+const bodyParser = require('body-parser');
+const url = require('url');
 const { Nuxt, Builder } = require('nuxt');
+const api = require('./api');
 
 const app = express();
 
@@ -23,6 +26,11 @@ async function start() {
     const builder = new Builder(nuxt);
     await builder.build();
   }
+
+  app.use(bodyParser.json());
+  app.use(bodyParser.urlencoded({ extended: false }));
+
+  app.use(url.resolve(process.env.BASE_URL, 'api/'), api);
 
   // Give nuxt middleware to express
   app.use(nuxt.render);

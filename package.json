@@ -11,13 +11,19 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
+    "@nuxtjs/axios": "^5.3.6",
+    "body-parser": "^1.18.3",
     "consola": "^2.3.2",
     "cross-env": "^5.2.0",
     "dotenv": "^6.2.0",
+    "downloadjs": "^1.4.7",
     "express": "^4.16.4",
-    "nuxt": "^2.3.4"
+    "fusionexport-node-client": "^1.0.1",
+    "nuxt": "^2.3.4",
+    "tmp": "0.0.33"
   },
   "devDependencies": {
+    "babel-eslint": "^10.0.1",
     "eslint": "^5.12.1",
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-loader": "^2.1.1",

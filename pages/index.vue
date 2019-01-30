@@ -1,17 +1,23 @@
 <template>
   <section class="container">
     <div id="chart-container"/>
+    <button
+      class="export-btn"
+      type="button"
+      @click="exportClickListener()">Export</button>
   </section>
 </template>
 
 <script>
+import download from 'downloadjs';
+
 export default {
   data() {
     return {
       chartConfig: {
         type: 'usa',
         renderAt: 'chart-container',
-        width: '100%',
+        width: '600',
         height: '400',
         dataFormat: 'json',
         dataSource: {
@@ -323,6 +329,14 @@ export default {
             },
           }],
         },
+        events: {
+          linkedItemOpened: (evt) => {
+            this.selectedChartConfig = evt.data.item.args;
+          },
+          linkedItemClosed: () => {
+            this.selectedChartConfig = null;
+          },
+        },
       },
     };
   },
@@ -333,11 +347,46 @@ export default {
 
   methods: {
     renderChart() {
-      new FusionCharts(this.chartConfig).render();
+      const chart = new FusionCharts(this.chartConfig);
+      chart.render();
+      chart.configureLink({
+        type: 'column2d',
+      });
+    },
+
+    async exportClickListener() {
+      const url = '/api/export';
+
+      const chartConfig = this.selectedChartConfig;
+      delete chartConfig.link;
+      delete chartConfig.clickedEntity;
+
+      const res = await this.$axios.post(url, {
+        chartConfig,
+      }, {
+        responseType: 'blob',
+      });
+
+      download(
+        res.data,
+        'Exported Chart.pdf',
+        'application/pdf',
+      );
     },
   },
 };
 </script>
 
 <style>
+.container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  flex-flow: column nowrap;
+}
+
+.export-btn {
+  padding: 5px 10px;
+}
 </style>

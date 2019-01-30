@@ -12,6 +12,10 @@ module.exports = {
     'vue',
   ],
 
+  parserOptions: {
+    parser: 'babel-eslint'
+  },
+
   rules: {
     "no-param-reassign": "off",
   }
