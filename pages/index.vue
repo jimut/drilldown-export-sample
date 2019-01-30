@@ -2,9 +2,10 @@
   <section class="container">
     <div id="chart-container"/>
     <button
+      :disabled="isBtnDisabled"
       class="export-btn"
       type="button"
-      @click="exportClickListener()">Export</button>
+      @click="exportClickListener">Export</button>
   </section>
 </template>
 
@@ -14,6 +15,7 @@ import download from 'downloadjs';
 export default {
   data() {
     return {
+      isBtnDisabled: true,
       chartConfig: {
         type: 'usa',
         renderAt: 'chart-container',
@@ -332,9 +334,11 @@ export default {
         events: {
           linkedItemOpened: (evt) => {
             this.selectedChartConfig = evt.data.item.args;
+            this.isBtnDisabled = false;
           },
           linkedItemClosed: () => {
             this.selectedChartConfig = null;
+            this.isBtnDisabled = true;
           },
         },
       },
@@ -357,6 +361,8 @@ export default {
     async exportClickListener() {
       const url = '/api/export';
 
+      this.isBtnDisabled = true;
+
       const chartConfig = this.selectedChartConfig;
       delete chartConfig.link;
       delete chartConfig.clickedEntity;
@@ -372,6 +378,8 @@ export default {
         'Exported Chart.pdf',
         'application/pdf',
       );
+
+      this.isBtnDisabled = false;
     },
   },
 };
