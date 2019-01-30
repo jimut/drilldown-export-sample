@@ -396,5 +396,6 @@ export default {
 
 .export-btn {
   padding: 5px 10px;
+  margin-top: 20px;
 }
 </style>
