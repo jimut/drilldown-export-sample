@@ -22,6 +22,9 @@ module.exports = {
     script: [
       { src: 'https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js' },
       { src: 'https://cdn.fusioncharts.com/fusioncharts/latest/maps/fusioncharts.usa.js' },
+      { src: 'https://cdn.fusioncharts.com/fusioncharts/latest/maps/fusioncharts.california.js' },
+      { src: 'https://cdn.fusioncharts.com/fusioncharts/latest/maps/fusioncharts.arizona.js' },
+      { src: 'https://cdn.fusioncharts.com/fusioncharts/latest/maps/fusioncharts.ohio.js' },
       { src: 'https://csm.fusioncharts.com/files/assets/fusion-theme/fusioncharts.theme.fusion.js' },
     ],
   },

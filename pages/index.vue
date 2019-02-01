@@ -26,259 +26,64 @@ export default {
           chart: {
             theme: 'fusion',
             caption: 'Carbon Dioxide Emissions',
-            subCaption: 'Wikipedia',
+            subCaption: 'CO2 emissions in different states of USA',
+            baseFont: 'sans-serif',
+            baseFontSize: '8',
+            showLabels: '1',
+            showLegend: '0',
           },
+
           data: [
-            {
-              id: 'AL',
-              value: 121,
-              link: 'newchart-json-A',
-            },
-            {
-              id: 'AK',
-              value: 35,
-              link: 'newchart-json-A',
-            },
-            {
-              id: 'AZ',
-              value: 93,
-              link: 'newchart-json-A',
-            },
-            {
-              id: 'AR',
-              value: 69,
-              link: 'newchart-json-A',
-            },
-            {
-              id: 'CA',
-              value: 359,
-              link: 'newchart-json-A',
-            },
-            {
-              id: 'CO',
-              value: 91,
-              link: 'newchart-json-A',
-            },
-            {
-              id: 'CT',
-              value: 35,
-              link: 'newchart-json-A',
-            },
-            {
-              id: 'DE',
-              value: 13,
-              link: 'newchart-json-A',
-            },
-            {
-              id: 'DC',
-              value: 3,
-              link: 'newchart-json-A',
-            },
-            {
-              id: 'FL',
-              value: 227,
-              link: 'newchart-json-A',
-            },
-            {
-              id: 'GA',
-              value: 139,
-              link: 'newchart-json-A',
-            },
-            {
-              id: 'HI',
-              value: 18,
-              link: 'newchart-json-A',
-            },
-            {
-              id: 'ID',
-              value: 17,
-              link: 'newchart-json-A',
-            },
-            {
-              id: 'IL',
-              value: 233,
-              link: 'newchart-json-A',
-            },
-            {
-              id: 'IN',
-              value: 203,
-              link: 'newchart-json-A',
-            },
-            {
-              id: 'IA',
-              value: 83,
-              link: 'newchart-json-A',
-            },
-            {
-              id: 'KS',
-              value: 70,
-              link: 'newchart-json-A',
-            },
-            {
-              id: 'KY',
-              value: 138,
-              link: 'newchart-json-A',
-            },
-            {
-              id: 'LA',
-              value: 207,
-              link: 'newchart-json-A',
-            },
-            {
-              id: 'ME',
-              value: 17,
-              link: 'newchart-json-A',
-            },
-            {
-              id: 'MA',
-              value: 64,
-              link: 'newchart-json-A',
-            },
-            {
-              id: 'MI',
-              value: 162,
-              link: 'newchart-json-A',
-            },
-            {
-              id: 'MN',
-              value: 94,
-              link: 'newchart-json-A',
-            },
-            {
-              id: 'MS',
-              value: 64,
-              link: 'newchart-json-A',
-            },
-            {
-              id: 'MO',
-              value: 131,
-              link: 'newchart-json-A',
-            },
-            {
-              id: 'MT',
-              value: 32,
-              link: 'newchart-json-A',
-            },
-            {
-              id: 'NE',
-              value: 52,
-              link: 'newchart-json-A',
-            },
-            {
-              id: 'NV',
-              value: 37,
-              link: 'newchart-json-A',
-            },
-            {
-              id: 'NH',
-              value: 15,
-              link: 'newchart-json-A',
-            },
-            {
-              id: 'NJ',
-              value: 114,
-              link: 'newchart-json-A',
-            },
-            {
-              id: 'NM',
-              value: 50,
-              link: 'newchart-json-A',
-            },
-            {
-              id: 'NY',
-              value: 170,
-              link: 'newchart-json-A',
-            },
-            {
-              id: 'NC',
-              value: 126,
-              link: 'newchart-json-A',
-            },
-            {
-              id: 'ND',
-              value: 55,
-              link: 'newchart-json-A',
-            },
-            {
-              id: 'OH',
-              value: 229,
-              link: 'newchart-json-A',
-            },
-            {
-              id: 'OK',
-              value: 104,
-              link: 'newchart-json-A',
-            },
-            {
-              id: 'OR',
-              value: 38,
-              link: 'newchart-json-A',
-            },
-            {
-              id: 'PA',
-              value: 242,
-              link: 'newchart-json-A',
-            },
-            {
-              id: 'RI',
-              value: 11,
-              link: 'newchart-json-A',
-            },
-            {
-              id: 'SC',
-              value: 74,
-              link: 'newchart-json-A',
-            },
-            {
-              id: 'SD',
-              value: 15,
-              link: 'newchart-json-A',
-            },
-            {
-              id: 'TN',
-              value: 103,
-              link: 'newchart-json-A',
-            },
-            {
-              id: 'TX',
-              value: 709,
-              link: 'newchart-json-A',
-            },
-            {
-              id: 'UT',
-              value: 64,
-              link: 'newchart-json-A',
-            },
-            {
-              id: 'VT',
-              value: 6,
-              link: 'newchart-json-A',
-            },
-            {
-              id: 'VA',
-              value: 103,
-              link: 'newchart-json-A',
-            },
-            {
-              id: 'WA',
-              value: 73,
-              link: 'newchart-json-A',
-            },
-            {
-              id: 'WV',
-              value: 97,
-              link: 'newchart-json-A',
-            },
-            {
-              id: 'WI',
-              value: 101,
-              link: 'newchart-json-A',
-            },
-            {
-              id: 'WY',
-              value: 65,
-              link: 'newchart-json-A',
-            },
+            { id: 'AL', value: 121 },
+            { id: 'AK', value: 35 },
+            { id: 'AZ', value: 93, link: 'newchart-json-AZ' },
+            { id: 'AR', value: 69 },
+            { id: 'CA', value: 359, link: 'newchart-json-CA' },
+            { id: 'CO', value: 91 },
+            { id: 'CT', value: 35 },
+            { id: 'DE', value: 13 },
+            { id: 'DC', value: 3 },
+            { id: 'FL', value: 227 },
+            { id: 'GA', value: 139 },
+            { id: 'HI', value: 18 },
+            { id: 'ID', value: 17 },
+            { id: 'IL', value: 233 },
+            { id: 'IN', value: 203 },
+            { id: 'IA', value: 83 },
+            { id: 'KS', value: 70 },
+            { id: 'KY', value: 138 },
+            { id: 'LA', value: 207 },
+            { id: 'ME', value: 17 },
+            { id: 'MA', value: 64 },
+            { id: 'MI', value: 162 },
+            { id: 'MN', value: 94 },
+            { id: 'MS', value: 64 },
+            { id: 'MO', value: 131 },
+            { id: 'MT', value: 32 },
+            { id: 'NE', value: 52 },
+            { id: 'NV', value: 37 },
+            { id: 'NH', value: 15 },
+            { id: 'NJ', value: 114 },
+            { id: 'NM', value: 50 },
+            { id: 'NY', value: 170 },
+            { id: 'NC', value: 126 },
+            { id: 'ND', value: 55 },
+            { id: 'OH', value: 229, link: 'newchart-json-OH' },
+            { id: 'OK', value: 104 },
+            { id: 'OR', value: 38 },
+            { id: 'PA', value: 242 },
+            { id: 'RI', value: 11 },
+            { id: 'SC', value: 74 },
+            { id: 'SD', value: 15 },
+            { id: 'TN', value: 103 },
+            { id: 'TX', value: 709 },
+            { id: 'UT', value: 64 },
+            { id: 'VT', value: 6 },
+            { id: 'VA', value: 103 },
+            { id: 'WA', value: 73 },
+            { id: 'WV', value: 97 },
+            { id: 'WI', value: 101 },
+            { id: 'WY', value: 65 },
           ],
 
           colorrange: {
@@ -287,51 +92,68 @@ export default {
             endlabel: 'High',
             code: '#6baa01',
             gradient: '1',
-            color: [{
-              maxvalue: '250',
-              displayvalue: 'Average',
-              code: '#f8bd19',
-            },
-            {
-              maxvalue: '1000',
-              code: '#e44a00',
-            },
+            color: [
+              {
+                maxvalue: '250',
+                displayvalue: 'Average',
+                code: '#f8bd19',
+              },
+              {
+                maxvalue: '1000',
+                code: '#e44a00',
+              },
             ],
           },
 
-          linkedData: [{
-            id: 'A',
-            linkedChart: {
-              chart: {
-                caption: 'This is drill-down chart',
-                theme: 'fusion',
+          linkedData: [
+            {
+              id: 'CA',
+              linkedChart: {
+                chart: {
+                  caption: 'This is a drill-down chart',
+                  theme: 'fusion',
+                  showLabels: '1',
+                  nullEntityColor: '#29c3be',
+                  baseFont: 'sans-serif',
+                  baseFontSize: '8',
+                },
               },
-              data: [
-                {
-                  label: '1',
-                  value: 100,
-                },
-                {
-                  label: '2',
-                  value: 150,
-                },
-                {
-                  label: '3',
-                  value: 200,
-                },
-                {
-                  label: '4',
-                  value: 250,
-                },
-                {
-                  label: '5',
-                  value: 300,
-                },
-              ],
             },
-          }],
+            {
+              id: 'AZ',
+              linkedChart: {
+                chart: {
+                  caption: 'This is a drill-down chart',
+                  theme: 'fusion',
+                  showLabels: '1',
+                  nullEntityColor: '#29c3be',
+                  baseFont: 'sans-serif',
+                  baseFontSize: '8',
+                },
+              },
+            },
+            {
+              id: 'OH',
+              linkedChart: {
+                chart: {
+                  caption: 'This is a drill-down chart',
+                  theme: 'fusion',
+                  showLabels: '1',
+                  nullEntityColor: '#29c3be',
+                  baseFont: 'sans-serif',
+                  baseFontSize: '8',
+                },
+              },
+            },
+          ],
         },
         events: {
+          entityClick(eventObj) {
+            const maptype = eventObj.data.label.toLowerCase().replace(/\s/g, '');
+            eventObj.sender.configureLink({
+              type: maptype,
+            });
+          },
           linkedItemOpened: (evt) => {
             this.selectedChartConfig = evt.data.item.args;
             this.isBtnDisabled = false;
@@ -353,9 +175,6 @@ export default {
     renderChart() {
       const chart = new FusionCharts(this.chartConfig);
       chart.render();
-      chart.configureLink({
-        type: 'column2d',
-      });
     },
 
     async exportClickListener() {
